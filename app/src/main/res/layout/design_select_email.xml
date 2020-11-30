@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_card_parent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:id="@+id/item_click_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="@dimen/margin_size"
+            android:paddingEnd="@dimen/margin_size">
+
+            <RadioButton
+                android:id="@+id/item_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/item_radio_button"
+                android:layout_toEndOf="@+id/item_picture_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/margin_size"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Uigitdev"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_title"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/margin_size"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="hello@uigitdev.com"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="@dimen/text_size" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/item_picture_parent"
+                android:layout_width="@dimen/rounded_picture_size"
+                android:layout_height="@dimen/rounded_picture_size"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_size"
+                app:cardBackgroundColor="@color/colorIconRound"
+                app:cardCornerRadius="@dimen/rounded_picture_radius_size">
+
+                <ImageView
+                    android:id="@+id/item_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

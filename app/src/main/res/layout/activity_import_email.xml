@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.ImportEmailActivity">
+
+    <RelativeLayout
+        android:id="@+id/item_import_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorCardBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/item_import_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_size"
+            android:textColor="@color/colorLabel"
+            android:textSize="@dimen/text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_progress_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_file_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_size"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/item_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:layout_marginEnd="@dimen/margin_size"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Scanning..."
+            android:textColor="@color/colorLabel"
+            android:textSize="@dimen/text_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_import"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size"
+        android:layout_marginBottom="@dimen/text_size"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/no_file_imported"
+        android:textColor="@color/colorTitle"
+        android:textSize="@dimen/text_size" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorCardBackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/item_file_name"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_email" />
+
+    <include
+        android:id="@+id/item_import"
+        layout="@layout/design_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_import_box"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size" />
+
+</RelativeLayout>

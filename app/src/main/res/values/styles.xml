@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="popupMenuStyle">@style/PopupTheme</item>
+        <item name="android:popupMenuStyle">@style/PopupTheme</item>
+    </style>
+
+    <style name="PopupTheme" parent="Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@color/colorCardBackground</item>
+    </style>
+
+</resources>

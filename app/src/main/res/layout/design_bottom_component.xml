@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_component_height"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/colorCardBackground"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/bottom_item_1_click_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bottom_item_1_icon"
+                        android:layout_width="@dimen/bottom_icon_size"
+                        android:layout_height="@dimen/bottom_icon_size"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_android_24"
+                        app:tint="@color/colorIconRound" />
+
+                    <TextView
+                        android:id="@+id/item_1_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bottom_item_1_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="12"
+                        android:text="@string/item_home"
+                        android:textColor="@color/colorIconRound"
+                        android:textSize="@dimen/bottom_component_label_size"
+                        tools:ignore="SmallSp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_item_2_click_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bottom_item_2_icon"
+                        android:layout_width="@dimen/bottom_icon_size"
+                        android:layout_height="@dimen/bottom_icon_size"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_android_24"
+                        app:tint="@color/colorIconRound" />
+
+                    <TextView
+                        android:id="@+id/item_2_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bottom_item_2_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="12"
+                        android:text="@string/item_email"
+                        android:textColor="@color/colorIconRound"
+                        android:textSize="@dimen/bottom_component_label_size"
+                        tools:ignore="SmallSp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_item_3_click_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bottom_item_3_icon"
+                        android:layout_width="@dimen/bottom_icon_size"
+                        android:layout_height="@dimen/bottom_icon_size"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_android_24"
+                        app:tint="@color/colorIconRound" />
+
+                    <TextView
+                        android:id="@+id/item_3_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bottom_item_3_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLength="12"
+                        android:text="@string/item_saved"
+                        android:textColor="@color/colorIconRound"
+                        android:textSize="@dimen/bottom_component_label_size"
+                        tools:ignore="SmallSp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

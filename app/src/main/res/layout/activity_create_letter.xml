@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.CreateLetterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorCardBackground" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/item_button"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_send_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_text"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginEnd="@dimen/margin_size"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/send_to"
+                android:textColor="@color/colorTitle"
+                android:textSize="@dimen/big_text_size"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/item_text"
+                layout="@layout/design_long_input_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_title"
+                android:layout_marginTop="@dimen/margin_size" />
+
+            <include
+                android:id="@+id/item_title"
+                layout="@layout/design_long_input_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size" />
+
+            <include
+                android:id="@+id/item_send_to_all"
+                layout="@layout/design_send_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_send_to"
+                android:layout_marginTop="@dimen/margin_size" />
+
+            <include
+                android:id="@+id/item_send_some"
+                layout="@layout/design_send_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_send_to_all"
+                android:layout_marginTop="@dimen/margin_size" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/item_button"
+        layout="@layout/design_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_size" />
+
+</RelativeLayout>

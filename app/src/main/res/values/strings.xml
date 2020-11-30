@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">MailApp</string>
+    <string name="item_home">Home</string>
+    <string name="item_email">Email</string>
+    <string name="item_saved">Saved</string>
+    <string name="exit_msg">Press again to exit</string>
+
+    <string name="menu_saved_item_edit">Edit</string>
+    <string name="menu_saved_item_copy">Copy</string>
+    <string name="menu_saved_item_delete">Delete</string>
+    <string name="menu_sent_item_info">Info</string>
+    <string name="menu_import_info">How to Import</string>
+
+    <string name="menu_copy_success">Copied to clipboard</string>
+    <string name="menu_delete_success">Removed from list</string>
+
+    <string name="import_info_item_1">1. Create a .txt file.</string>
+    <string name="import_info_item_2">2. Place the email addresses you want to import line by line.</string>
+    <string name="import_info_item_3">3. Separate the data with \",\"</string>
+    <string name="import_info_item_4">4. Data order: user_photo_url,user_name,user_email,date</string>
+    <string name="import_info_item_5">5. The date shall be in the following format:\n\"yyyy-MM-dd-HH:mm:ss\"</string>
+    <string name="import_info_item_6">6. Insert the file into your phone\'s internal storage Download folder.</string>
+    <string name="import_info_item_7">7. Click the \"Import File\" button.</string>
+    <string name="import_info_item_8">8. Allow access to the storage.</string>
+    <string name="import_info_item_9">9. Click the \"Import File\" button again.</string>
+    <string name="import_info_item_10">10. Select the .txt file.</string>
+    <string name="import_info_item_11">Example import:\nhttps://uigitdev.com/logo.png,Uigitdev,hello@uigitdev.com,2020–10-08-00:20:52</string>
+
+    <string name="database_exists_saved_text">The item has already been added</string>
+    <string name="database_exists_email">has already been added</string>
+
+    <string name="fab_menu_head">Select a function</string>
+    <string name="fab_menu_item_1">Create Letter</string>
+    <string name="fab_menu_item_2">Create Template</string>
+    <string name="fab_menu_item_3">Add Email Address</string>
+    <string name="fab_menu_item_4">Import Email Addresses</string>
+    <string name="fab_menu_item_5">Delete Lists</string>
+
+    <string name="button_save">Save</string>
+
+    <string name="hint_picture_url">Picture URL</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_text">Text</string>
+
+    <string name="error_input_field">This field is required</string>
+    <string name="error_file_format">Invalid format. Use a .txt file to scan</string>
+    <string name="error_import_failed">An error occurred while reading the file</string>
+
+    <string name="success_added">Successfully added</string>
+
+    <string name="close">Close</string>
+    <string name="no_file_imported">No file imported</string>
+    <string name="import_button_text">Import File</string>
+
+    <string name="permission_dialog_title">Grant permission</string>
+    <string name="permission_dialog_text">The app needs permission to use this feature. Please enable to continue.</string>
+
+    <string name="loading_active">Scanning is currently active.</string>
+
+    <string name="adapter_empty_saved">The list of templates is currently empty</string>
+    <string name="adapter_empty_email">The list of emails is currently empty</string>
+    <string name="adapter_empty_sent">The list of sent is currently empty</string>
+
+    <string name="empty_button_text">Create New</string>
+    <string name="deleted_data_success">Successfully deleted list</string>
+
+    <string name="delete_button_sent">Delete Sent List</string>
+    <string name="delete_button_email">Delete Email List</string>
+    <string name="delete_button_saved">Delete Template List</string>
+    <string name="delete_button_info">You cannot restore the lists after deleting them.</string>
+    <string name="update_success">Data updated successfully</string>
+    <string name="send_to">Send to</string>
+    <string name="all_email_addresses">All Email</string>
+    <string name="select_email_addresses">Select Email</string>
+    <string name="no_selected_email">No email address selected</string>
+    <string name="selected_info_text">email addresses selected</string>
+    <string name="send_email_button_text">Send Email</string>
+    <string name="no_recipients_selected">No recipients selected</string>
+    <string name="send_permission_title">Email sending permission</string>
+    <string name="send_permission_text">You want to send the email to the selected addresses?</string>
+    <string name="email_sending_active">Email sending is currently active</string>
+    <string name="sending_button_text">Sending</string>
+    <string name="email_account">Account</string>
+    <string name="account_email_hint">Gmail address</string>
+    <string name="account_password_hint">Gmail password</string>
+    <string name="account_info">Enter your Gmail address and password. The data will only be stored within the application.</string>
+    <string name="account_saved_data">Saved successfully</string>
+    <string name="add_account">Add Account</string>
+    <string name="enter_your_email_data">Enter your Gmail data</string>
+    <string name="success_email_sent">Successfully sent emails to the selected addresses</string>
+    <string name="error_sending_text">Failed to send emails</string>
+
+</resources>

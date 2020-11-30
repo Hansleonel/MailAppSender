@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.DeleteListsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_delete_saved"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/delete_button_info"
+        android:textColor="@color/colorLabel"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorCardBackground" />
+
+    <include
+        android:id="@+id/item_delete_emails"
+        layout="@layout/design_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_delete_sent"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size" />
+
+    <include
+        android:id="@+id/item_delete_saved"
+        layout="@layout/design_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_delete_emails"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size" />
+
+    <include
+        android:id="@+id/item_delete_sent"
+        layout="@layout/design_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size" />
+
+</RelativeLayout>
